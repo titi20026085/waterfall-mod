@@ -40,9 +40,8 @@ public class LavafallManager {
             return true;
         }
 
-        return state.isAir()
-            || fluidState.is(Fluids.FLOWING_LAVA)
-            || fluidState.is(Fluids.LAVA);
+        // Only flowing lava (not source blocks) counts as open space.
+        return state.isAir() || fluidState.is(Fluids.FLOWING_LAVA);
     }
 
     public static int calculateLavafallHeight(Level level, BlockPos startPos) {

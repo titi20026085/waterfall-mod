@@ -43,7 +43,7 @@ public class Config {
         MAX_LAVAFALL_HEIGHT = BUILDER
             .comment("Maximum height (in blocks) of a vertical lavafall before it evaporates")
             .translation("waterfall.config.lavafall.maxHeight")
-            .defineInRange("maxHeight", 8, 1, 100);
+            .defineInRange("maxHeight", 12, 1, 100);
 
         ENABLE_LAVA_EVAPORATION_EFFECT = BUILDER
             .comment("Show smoke/flame particle effects when a lavafall evaporates")

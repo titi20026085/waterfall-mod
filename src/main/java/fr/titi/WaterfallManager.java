@@ -35,15 +35,14 @@ public class WaterfallManager {
         BlockState state = level.getBlockState(pos);
         FluidState fluidState = state.getFluidState();
 
-        if (state.getBlock() instanceof WaterVaporBlock || state.getBlock() instanceof LavaVaporBlock) {
+        if (state.getBlock() instanceof WaterVaporBlock) {
             return true;
         }
 
-        return state.isAir()
-            || fluidState.is(Fluids.FLOWING_WATER)
-            || fluidState.is(Fluids.WATER)
-            || fluidState.is(Fluids.FLOWING_LAVA)
-            || fluidState.is(Fluids.LAVA);
+        // Only flowing water (not source blocks) counts as open space.
+        // Source water (oceans, rivers, pools) is treated as solid to avoid
+        // false waterfall detection inside large water bodies.
+        return state.isAir() || fluidState.is(Fluids.FLOWING_WATER);
     }
 
     public static int calculateWaterfallHeight(Level level, BlockPos startPos) {

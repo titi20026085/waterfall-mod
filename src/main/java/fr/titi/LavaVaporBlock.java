@@ -100,16 +100,13 @@ public class LavaVaporBlock extends Block {
             double vy = 0.02 + random.nextDouble() * 0.03;
             double vz = (random.nextDouble() - 0.5) * 0.015;
 
-            level.addParticle(ParticleTypes.LARGE_SMOKE, x, y, z, vx, vy, vz);
+            level.addParticle(ParticleTypes.SMOKE, x+0.5, y+4, z+0.5, vx, vy-0.2, vz);
+            level.addParticle(ParticleTypes.SMOKE, x+0.5, y+4, z-0.5, vx, vy-0.2, vz);
+            level.addParticle(ParticleTypes.SMOKE, x-0.5, y+4, z-0.5, vx, vy-0.2, vz);
+            level.addParticle(ParticleTypes.SMOKE, x-0.5, y+4, z+0.5, vx, vy-0.2, vz);
 
-            if (opacity >= 2 && random.nextFloat() < 0.4f) {
-                level.addParticle(ParticleTypes.SMOKE, x+0.5, y+4, z+0.5, vx, vy * 0.8, vz);
-                level.addParticle(ParticleTypes.SMOKE, x+0.5, y+4, z-0.5, vx, vy * 0.8, vz);
-                level.addParticle(ParticleTypes.SMOKE, x-0.5, y+4, z-0.5, vx, vy * 0.8, vz);
-                level.addParticle(ParticleTypes.SMOKE, x-0.5, y+4, z+0.5, vx, vy * 0.8, vz);
-            }
 
-            if (opacity >= 4 && random.nextFloat() < 0.3f) {
+            if (opacity >= 3 && random.nextFloat() < 0.3f) {
                 level.addParticle(ParticleTypes.FLAME, x, y, z, vx * 0.5, vy * 0.3, vz * 0.5);
             }
         }
