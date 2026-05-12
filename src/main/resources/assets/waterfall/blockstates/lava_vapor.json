@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "opacity=1": { "model": "waterfall:block/water_vapor_1" },
+    "opacity=2": { "model": "waterfall:block/water_vapor_2" },
+    "opacity=3": { "model": "waterfall:block/water_vapor_3" },
+    "opacity=4": { "model": "waterfall:block/water_vapor_4" },
+    "opacity=5": { "model": "waterfall:block/water_vapor_5" }
+  }
+}

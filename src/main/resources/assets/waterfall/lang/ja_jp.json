@@ -1,0 +1,18 @@
+{
+  "itemGroup.waterfall": "Waterfall",
+  "block.waterfall.water_vapor": "水蒸気",
+  "block.waterfall.lava_vapor": "溶岩蒸気",
+
+  "waterfall.configuration": "滝と溶岩の滝",
+  "waterfall.configuration.waterfall": "滝",
+  "waterfall.configuration.lavafall": "溶岩の滝",
+
+  "waterfall.config.enabled": "MODを有効にする",
+  "waterfall.config.waterfall": "滝",
+  "waterfall.config.waterfall.maxHeight": "滝の最大高さ",
+  "waterfall.config.waterfall.enableEvaporationEffect": "蒸発エフェクト",
+  "waterfall.config.waterfall.particleDensity": "パーティクル密度",
+  "waterfall.config.lavafall": "溶岩の滝",
+  "waterfall.config.lavafall.maxHeight": "溶岩の滝の最大高さ",
+  "waterfall.config.lavafall.enableEvaporationEffect": "煙エフェクト"
+}

@@ -1,0 +1,18 @@
+{
+  "itemGroup.waterfall": "Waterfall",
+  "block.waterfall.water_vapor": "水蒸气",
+  "block.waterfall.lava_vapor": "岩浆蒸气",
+
+  "waterfall.configuration": "瀑布与岩浆瀑布",
+  "waterfall.configuration.waterfall": "瀑布",
+  "waterfall.configuration.lavafall": "岩浆瀑布",
+
+  "waterfall.config.enabled": "启用模组",
+  "waterfall.config.waterfall": "瀑布",
+  "waterfall.config.waterfall.maxHeight": "瀑布最大高度",
+  "waterfall.config.waterfall.enableEvaporationEffect": "蒸发粒子效果",
+  "waterfall.config.waterfall.particleDensity": "粒子密度",
+  "waterfall.config.lavafall": "岩浆瀑布",
+  "waterfall.config.lavafall.maxHeight": "岩浆瀑布最大高度",
+  "waterfall.config.lavafall.enableEvaporationEffect": "烟雾效果"
+}

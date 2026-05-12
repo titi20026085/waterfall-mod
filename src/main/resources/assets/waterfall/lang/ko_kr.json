@@ -1,0 +1,18 @@
+{
+  "itemGroup.waterfall": "Waterfall",
+  "block.waterfall.water_vapor": "수증기",
+  "block.waterfall.lava_vapor": "용암 증기",
+
+  "waterfall.configuration": "폭포 및 용암 폭포",
+  "waterfall.configuration.waterfall": "폭포",
+  "waterfall.configuration.lavafall": "용암 폭포",
+
+  "waterfall.config.enabled": "모드 활성화",
+  "waterfall.config.waterfall": "폭포",
+  "waterfall.config.waterfall.maxHeight": "최대 폭포 높이",
+  "waterfall.config.waterfall.enableEvaporationEffect": "증발 효과",
+  "waterfall.config.waterfall.particleDensity": "파티클 밀도",
+  "waterfall.config.lavafall": "용암 폭포",
+  "waterfall.config.lavafall.maxHeight": "최대 용암 폭포 높이",
+  "waterfall.config.lavafall.enableEvaporationEffect": "연기 효과"
+}

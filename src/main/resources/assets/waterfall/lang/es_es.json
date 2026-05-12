@@ -1,0 +1,18 @@
+{
+  "itemGroup.waterfall": "Waterfall",
+  "block.waterfall.water_vapor": "Vapor de agua",
+  "block.waterfall.lava_vapor": "Vapor de lava",
+
+  "waterfall.configuration": "Cascadas y Coladas",
+  "waterfall.configuration.waterfall": "Cascada",
+  "waterfall.configuration.lavafall": "Caída de lava",
+
+  "waterfall.config.enabled": "Activar mod",
+  "waterfall.config.waterfall": "Cascada",
+  "waterfall.config.waterfall.maxHeight": "Altura máxima de cascada",
+  "waterfall.config.waterfall.enableEvaporationEffect": "Efectos de evaporación",
+  "waterfall.config.waterfall.particleDensity": "Densidad de partículas",
+  "waterfall.config.lavafall": "Caída de lava",
+  "waterfall.config.lavafall.maxHeight": "Altura máxima de caída de lava",
+  "waterfall.config.lavafall.enableEvaporationEffect": "Efectos de humo"
+}

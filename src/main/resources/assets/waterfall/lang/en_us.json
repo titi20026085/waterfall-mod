@@ -1,0 +1,18 @@
+{
+  "itemGroup.waterfall": "Waterfall",
+  "block.waterfall.water_vapor": "Water Vapor",
+  "block.waterfall.lava_vapor": "Lava Vapor",
+
+  "waterfall.configuration": "Waterfall & Lavafall",
+  "waterfall.configuration.waterfall": "Waterfall",
+  "waterfall.configuration.lavafall": "Lavafall",
+
+  "waterfall.config.enabled": "Enable Mod",
+  "waterfall.config.waterfall": "Waterfall",
+  "waterfall.config.waterfall.maxHeight": "Max Waterfall Height",
+  "waterfall.config.waterfall.enableEvaporationEffect": "Evaporation Effects",
+  "waterfall.config.waterfall.particleDensity": "Particle Density",
+  "waterfall.config.lavafall": "Lavafall",
+  "waterfall.config.lavafall.maxHeight": "Max Lavafall Height",
+  "waterfall.config.lavafall.enableEvaporationEffect": "Smoke Effects"
+}

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.gradlew build)",
+      "Bash(gradle build)",
+      "Bash(Remove-Item *)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

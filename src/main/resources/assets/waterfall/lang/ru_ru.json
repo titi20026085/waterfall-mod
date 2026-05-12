@@ -1,0 +1,18 @@
+{
+  "itemGroup.waterfall": "Waterfall",
+  "block.waterfall.water_vapor": "Водяной пар",
+  "block.waterfall.lava_vapor": "Лавовый пар",
+
+  "waterfall.configuration": "Водопады и Лавопады",
+  "waterfall.configuration.waterfall": "Водопад",
+  "waterfall.configuration.lavafall": "Лавопад",
+
+  "waterfall.config.enabled": "Включить мод",
+  "waterfall.config.waterfall": "Водопад",
+  "waterfall.config.waterfall.maxHeight": "Макс. высота водопада",
+  "waterfall.config.waterfall.enableEvaporationEffect": "Эффекты испарения",
+  "waterfall.config.waterfall.particleDensity": "Плотность частиц",
+  "waterfall.config.lavafall": "Лавопад",
+  "waterfall.config.lavafall.maxHeight": "Макс. высота лавопада",
+  "waterfall.config.lavafall.enableEvaporationEffect": "Эффекты дыма"
+}
