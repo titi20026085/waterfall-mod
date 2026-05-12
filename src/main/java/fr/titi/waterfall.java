@@ -57,7 +57,6 @@ public class waterfall {
             Config.maxWaterfallHeight, Config.maxLavafallHeight, Config.enableEvaporationEffect);
     }
 
-    // Loaded only on the physical client — safe to reference client-only classes here
     @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent

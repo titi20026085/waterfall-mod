@@ -41,18 +41,15 @@ public class WaterVaporBlock extends Block {
     public void neighborChanged(BlockState state, Level level, BlockPos pos, net.minecraft.world.level.block.Block neighborBlock, BlockPos neighborPos, boolean isMoving) {
         if (level.isClientSide()) return;
 
-        // Remonter jusqu'au sommet de la colonne de vapeur
         BlockPos top = pos;
         while (level.getBlockState(top.above()).getBlock() instanceof WaterVaporBlock) {
             top = top.above();
         }
 
-        // Vérifier si le bloc au-dessus du sommet est de l'eau
         var fluidAbove = level.getBlockState(top.above()).getFluidState();
         boolean hasWater = fluidAbove.is(Fluids.FLOWING_WATER) || fluidAbove.is(Fluids.WATER);
 
         if (!hasWater) {
-            // Supprimer toute la colonne vers le bas
             BlockPos current = top;
             while (level.getBlockState(current).getBlock() instanceof WaterVaporBlock) {
                 level.setBlock(current, Blocks.AIR.defaultBlockState(), 3);

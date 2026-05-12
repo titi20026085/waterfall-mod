@@ -40,7 +40,7 @@ public class LavafallManager {
             return true;
         }
 
-        // Only flowing lava (not source blocks) counts as open space.
+        // Source lava is not treated as open space to avoid false detection inside lava pools.
         return state.isAir() || fluidState.is(Fluids.FLOWING_LAVA);
     }
 

@@ -39,9 +39,7 @@ public class WaterfallManager {
             return true;
         }
 
-        // Only flowing water (not source blocks) counts as open space.
-        // Source water (oceans, rivers, pools) is treated as solid to avoid
-        // false waterfall detection inside large water bodies.
+        // Source water (oceans, pools) is not treated as open space to avoid false detection inside water bodies.
         return state.isAir() || fluidState.is(Fluids.FLOWING_WATER);
     }
 
