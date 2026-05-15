@@ -1,6 +1,6 @@
 # Waterfall Mod
-
-A lightweight Minecraft mod that limits the height of natural vertical waterfalls with visual evaporation effects.
+## ⚠️This mod is an early prototype, I have not tested compatibility with other mods and it not replace existing waterfalls or lavafalls
+A lightweight Minecraft mod that limits the height of natural vertical waterfalls and lavafalls with visual evaporation effects.
 
 ## Features
 
