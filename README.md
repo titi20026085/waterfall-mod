@@ -23,17 +23,29 @@ A lightweight Minecraft mod that limits the height of natural vertical waterfall
 The mod configuration is located at `config/waterfall-common.toml` and includes:
 
 ```toml
-enabled = true                    # Enable/disable the mod
-maxWaterfallHeight = 12          # Maximum waterfall height in blocks
-enableEvaporationEffect = true   # Show particle effects when waterfalls evaporate
-evaporationParticleDensity = 0.5 # Particle effect density (0.0 to 1.0)
-```
+#Enable or disable the mod entirely
+enabled = true
 
-### Default Values
-- **enabled**: `true`
-- **maxWaterfallHeight**: `12` blocks
-- **enableEvaporationEffect**: `true`
-- **evaporationParticleDensity**: `0.5`
+[waterfall]
+	#Maximum height (in blocks) of a vertical waterfall before it evaporates
+	# Default: 12
+	# Range: 1 ~ 100
+	maxHeight = 12
+	#Show cloud/splash particle effects when a waterfall evaporates
+	enableEvaporationEffect = true
+	#Density of evaporation particles (0.0 = none, 1.0 = maximum)
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	particleDensity = 0.5
+
+[lavafall]
+	#Maximum height (in blocks) of a vertical lavafall before it evaporates
+	# Default: 12
+	# Range: 1 ~ 100
+	maxHeight = 12
+	#Show smoke/flame particle effects when a lavafall evaporates
+	enableEvaporationEffect = true
+```
 
 ## Technical Overview
 
