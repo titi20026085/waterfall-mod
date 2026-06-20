@@ -51,7 +51,16 @@ public class FlowingFluidMixin {
 
             if (direction == Direction.DOWN && fr.titi.LavafallManager.isLavafall(level, fromPos)) {
                 int height = fr.titi.LavafallManager.calculateLavafallHeight(level, fromPos);
-                if (height >= Config.maxLavafallHeight) {
+                if(level.dimension().location().toString().equals("minecraft:the_nether")){
+                    if (height >= Config.maxLavafallNetherHeight) {
+                        if (Config.enableLavaEvaporationEffect && level instanceof ServerLevel serverLevel) {
+                            fr.titi.LavafallManager.spawnEvaporationEffect(serverLevel, fromPos);
+                        }
+                        cir.setReturnValue(false);
+                    }
+                }
+
+                else if (height >= Config.maxLavafallHeight) {
                     if (Config.enableLavaEvaporationEffect && level instanceof ServerLevel serverLevel) {
                         fr.titi.LavafallManager.spawnEvaporationEffect(serverLevel, fromPos);
                     }
