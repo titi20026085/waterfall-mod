@@ -14,5 +14,6 @@
   "waterfall.config.waterfall.particleDensity": "Particle Density",
   "waterfall.config.lavafall": "Lavafall",
   "waterfall.config.lavafall.maxHeight": "Max Lavafall Height",
-  "waterfall.config.lavafall.enableEvaporationEffect": "Smoke Effects"
+  "waterfall.config.lavafall.enableEvaporationEffect": "Smoke Effects",
+  "waterfall.config.lavafall.maxNetherHeight": "Max Lavafall Height in the Nether"
 }

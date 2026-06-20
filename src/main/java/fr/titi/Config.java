@@ -13,6 +13,7 @@ public class Config {
     private static final ModConfigSpec.DoubleValue EVAPORATION_PARTICLE_DENSITY;
     private static final ModConfigSpec.IntValue MAX_LAVAFALL_HEIGHT;
     private static final ModConfigSpec.BooleanValue ENABLE_LAVA_EVAPORATION_EFFECT;
+    private static final ModConfigSpec.IntValue MAX_LAVAFALL_NETHER_HEIGHT;
 
     static {
         ENABLED = BUILDER
@@ -50,6 +51,11 @@ public class Config {
             .translation("waterfall.config.lavafall.enableEvaporationEffect")
             .define("enableEvaporationEffect", true);
 
+        MAX_LAVAFALL_NETHER_HEIGHT = BUILDER
+                .comment("Maximum height (in blocks) of a vertical lavafall before it evaporates in the Nether")
+                .translation("waterfall.config.lavafall.maxNetherHeight")
+                .defineInRange("maxLavafallNetherHeight", 12, 1, 100);
+
         BUILDER.pop();
     }
 
@@ -61,6 +67,7 @@ public class Config {
     public static double evaporationParticleDensity;
     public static int maxLavafallHeight;
     public static boolean enableLavaEvaporationEffect;
+    public static int maxLavafallNetherHeight;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
@@ -70,5 +77,6 @@ public class Config {
         evaporationParticleDensity = EVAPORATION_PARTICLE_DENSITY.get();
         maxLavafallHeight = MAX_LAVAFALL_HEIGHT.get();
         enableLavaEvaporationEffect = ENABLE_LAVA_EVAPORATION_EFFECT.get();
+        maxLavafallNetherHeight = MAX_LAVAFALL_NETHER_HEIGHT.get();
     }
 }
